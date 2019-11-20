@@ -2,5 +2,6 @@
 Description=Daemon to start an ark server instance
 
 [Service]
-ExecStart=/usr/bin/arkmanager useconfig %i run
+User=steam
+ExecStart=/usr/bin/arkmanager useconfig %i start --no-background
 Type=simple
